@@ -25,6 +25,13 @@ A modern, feature-rich Neovim setup with LSP support, code completion, syntax hi
 - A terminal with true color support
 - [Optional] A Nerd Font for proper icon display
 
+### C# Development Requirements
+
+- [.NET SDK](https://dotnet.microsoft.com/download) (for building and running C# projects)
+- [OmniSharp Language Server](https://github.com/OmniSharp/omnisharp-roslyn) (installed via Mason)
+- [netcoredbg](https://github.com/Samsung/netcoredbg/releases) for debugging .NET applications
+- [CSharpier](https://csharpier.com/) for code formatting (install with `dotnet tool install -g csharpier`)
+
 ## Installation
 
 1. Back up your existing Neovim configuration (if any):
@@ -36,7 +43,7 @@ mv ~/.config/nvim ~/.config/nvim.backup
 2. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/nvim-config.git ~/.config/nvim
+git clone https://github.com/ionthedev/ionvim.git ~/.config/nvim
 ```
 
 3. Start Neovim:
@@ -88,6 +95,12 @@ The configuration will automatically install [lazy.nvim](https://github.com/folk
 - `<Space>dt` - Toggle breakpoint
 - `<Space>dB` - Set breakpoint
 
+### C# Specific
+
+- `<Space>ct` - Debug C# test at cursor
+- `<Space>cb` - Build C# project
+- `<Space>cr` - Run C# project
+
 ### Code Folding
 
 - `<Space>ff` - Fold functions only
@@ -110,6 +123,7 @@ This configuration comes with LSP support for:
 - C/C++
 - Python
 - Rust
+- C# (Cross-platform support for Windows, macOS, and Linux)
 
 Additional languages can be added by installing the appropriate servers via Mason.
 
