@@ -9,6 +9,8 @@ Primarily this is based on the [0 to LSP](https://www.youtube.com/watch?v=w7i4am
 
 If you like it, give me a follow on X [@ionthedev](https://x.com/ionthedev)
 
+The only system dependency should be [Yazi](https://github.com/sxyazi/yazi)
+
 ## Keymaps
 
 #### Leader Key
@@ -20,11 +22,11 @@ If you like it, give me a follow on X [@ionthedev](https://x.com/ionthedev)
 - <leader>fb - Telescope buffers
 - <leader>fh - Telescope help tags
 - <leader>ps - Telescope grep string (prompts for search term)
-- <leader>ec - Telescope find files in nvim config directory
-- <leader>ef - Open Yazi file browser in current directory
+- <leader>ec - Telescope find files in nvim config directory. Think `Enter Config`
+- <leader>ef - Open Yazi file browser in current directory. Think `Enter Files`
 
 #### Terminal & Tools
-- <leader>et - Open floating terminal in current directory
+- <leader>et - Open floating terminal in current directory. Think `Enter Terminal`
 - <C-f> - Open tmux sessionizer
 
 #### Harpoon (Quick File Navigation)

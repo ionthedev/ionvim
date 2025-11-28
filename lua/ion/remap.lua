@@ -46,7 +46,7 @@ vim.keymap.set(
 )
 
 vim.keymap.set("n", "<leader>ef", "<cmd>Yazi<CR>") -- Opens file browser in current directory
-vim.keymap.set("n", "<leader>et", "<cmd>ToggleTerm size=40 dir=. direction=floating name=desktop<CR>") -- Opens terminal in current directory
+vim.keymap.set("n", "<leader>et", "<cmd>ToggleTerm size=40 dir=. direction=float name=desktop<CR>") -- Opens terminal in current directory
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
