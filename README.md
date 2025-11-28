@@ -1,3 +1,5 @@
+![img](https://pbs.twimg.com/media/G63b5J9aEAA3k57?format=png&name=900x900)
+
 Welcome to my opinionated/lightweight neovim config. 
 
 I built this over the last month and have been daily driving it.
