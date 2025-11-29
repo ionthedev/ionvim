@@ -3,7 +3,7 @@ require("mason").setup()
 local mason_lspconfig = require("mason-lspconfig")
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local servers = { "arduino_language_server", "lemminx", "lua_ls", "clangd", "jedi_language_server", "ts_ls", "tinymist" }
+local servers = { "lemminx", "lua_ls", "clangd", "jedi_language_server", "ts_ls", "tinymist" }
 
 local on_attach = function(_, bufnr)
     local opts = { buffer = bufnr, remap = false }

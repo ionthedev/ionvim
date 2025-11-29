@@ -9,7 +9,9 @@ Primarily this is based on the [0 to LSP](https://www.youtube.com/watch?v=w7i4am
 
 If you like it, give me a follow on X [@ionthedev](https://x.com/ionthedev)
 
-The only system dependency should be [Yazi](https://github.com/sxyazi/yazi)
+#### System dependencies
+[Yazi](https://github.com/sxyazi/yazi)
+[ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/get-started/index.html#introduction) <-- You should only need this if you're cracked
 
 ## Keymaps
 

@@ -74,12 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["Arduino-Nvim"] = {
-    config = { "\27LJ\2\n~\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0016\0\2\0009\0\3\0'\2\4\0B\0\2\1K\0\1\0>autocmd BufRead,BufNewFile *.ino,*.c set filetype=arduino\bcmd\bvim\17Arduino-Nvim\frequire\0" },
-    loaded = true,
-    path = "/home/ion/.local/share/nvim/site/pack/packer/start/Arduino-Nvim",
-    url = "https://github.com/yuukiflow/Arduino-Nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/ion/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -102,6 +96,12 @@ _G.packer_plugins = {
     path = "/home/ion/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
     url = "https://github.com/nvimdev/dashboard-nvim"
   },
+  ["esp32.nvim"] = {
+    config = { "\27LJ\2\nJ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\14build_dir\nbuild\nsetup\nesp32\frequire\0" },
+    loaded = true,
+    path = "/home/ion/.local/share/nvim/site/pack/packer/start/esp32.nvim",
+    url = "https://github.com/Aietes/esp32.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/ion/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -113,7 +113,7 @@ _G.packer_plugins = {
     url = "https://github.com/felpafel/inlay-hint.nvim"
   },
   ["mason-lspconfig.nvim"] = {
-    config = { "\27LJ\2\nî\1\0\0\b\0\b\0/6\0\0\0009\0\1\0009\0\2\0B\0\1\0026\1\0\0009\1\1\0019\1\3\1\18\3\0\0'\4\4\0&\3\4\3)\4\0\0)\5\1\0B\1\4\2\21\2\1\0)\3\0\0\1\3\2\0X\2\1€L\0\2\0\18\2\0\0\6\2\5\0X\3\24€U\3\23€6\3\0\0009\3\1\0039\3\6\3\18\5\2\0'\6\a\0B\3\3\2\18\2\3\0006\3\0\0009\3\1\0039\3\3\3\18\5\2\0'\6\4\0&\5\6\5)\6\0\0)\a\1\0B\3\4\2\18\1\3\0\21\3\1\0)\4\0\0\1\4\3\0X\3è\127L\2\2\0X\3æ\127+\3\0\0L\3\2\0\a:h\16fnamemodify\6/\v/*.ino\tglob\vgetcwd\afn\bvimÖ\4\1\0\t\0\23\0013'\0\0\0005\1\1\0006\2\2\0009\2\3\0029\2\4\2\18\4\0\0B\2\2\2\t\2\0\0X\2\r€6\2\5\0\18\4\0\0B\2\2\2\15\0\2\0X\3\b€6\3\6\0\18\5\2\0B\3\2\3\15\0\3\0X\5\3€\15\0\4\0X\5\1€\18\1\4\0006\2\a\0'\4\b\0B\2\2\0029\2\t\0029\2\n\0025\4\17\0005\5\v\0006\6\2\0009\6\3\0069\6\f\6'\b\r\0B\6\2\2>\6\5\0056\6\2\0009\6\3\0069\6\14\6'\b\15\0B\6\2\2\14\0\6\0X\a\1€'\6\16\0>\6\a\5=\5\18\0045\5\19\0=\5\20\0043\5\21\0=\5\22\4B\2\2\1K\0\1\0\rroot_dir\0\14filetypes\1\4\0\0\farduino\bcpp\6c\bcmd\1\0\3\rroot_dir\0\14filetypes\0\bcmd\0\20/usr/bin/clangd\vclangd\fexepath&$HOME/.arduino15/arduino-cli.yaml\vexpand\1\n\0\0\28arduino-language-server\t-cli\16arduino-cli\16-cli-config\0\f-clangd\0\n-fqbn\24esp32:esp32:esp32s3\nsetup\28arduino_language_server\14lspconfig\frequire\npcall\rloadfile\17filereadable\afn\bvim\1\0\2\nboard\24esp32:esp32:esp32s3\tport\17/dev/ttyACM0\24.arduino_config.lua\2ý\1\1\0\5\0\v\0\0186\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\3\0B\0\2\0029\0\2\0005\2\5\0005\3\4\0=\3\6\0025\3\b\0003\4\a\0=\4\t\3=\3\n\2B\0\2\1K\0\1\0\rhandlers\28arduino_language_server\1\0\1\28arduino_language_server\0\0\21ensure_installed\1\0\2\rhandlers\0\21ensure_installed\0\1\2\0\0\28arduino_language_server\20mason-lspconfig\nsetup\nmason\frequire\0" },
+    config = { "\27LJ\2\n[\0\0\3\0\4\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\3\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\20mason-lspconfig\nsetup\nmason\frequire\0" },
     loaded = true,
     path = "/home/ion/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/mason-org/mason-lspconfig.nvim"
@@ -129,6 +129,7 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
+    config = { "\27LJ\2\n}\0\0\6\0\b\0\0166\0\0\0'\2\1\0B\0\2\0026\1\2\0009\1\3\0019\1\4\1'\3\5\0B\1\2\0016\1\2\0009\1\3\0019\1\6\1'\3\5\0009\4\a\0B\4\1\0A\1\1\1K\0\1\0\15lsp_config\vconfig\vclangd\venable\blsp\bvim\nesp32\frequire\0" },
     loaded = true,
     path = "/home/ion/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
@@ -162,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ion/.local/share/nvim/site/pack/packer/start/rustaceanvim",
     url = "https://github.com/mrcjkb/rustaceanvim"
+  },
+  ["snacks.nvim"] = {
+    loaded = true,
+    path = "/home/ion/.local/share/nvim/site/pack/packer/start/snacks.nvim",
+    url = "https://github.com/folke/snacks.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -205,14 +211,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: vague
-time([[Config for vague]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\22colorscheme vague\bcmd\bvim\0", "config", "vague")
-time([[Config for vague]], false)
--- Config for: Arduino-Nvim
-time([[Config for Arduino-Nvim]], true)
-try_loadstring("\27LJ\2\n~\0\0\3\0\5\0\b6\0\0\0'\2\1\0B\0\2\0016\0\2\0009\0\3\0'\2\4\0B\0\2\1K\0\1\0>autocmd BufRead,BufNewFile *.ino,*.c set filetype=arduino\bcmd\bvim\17Arduino-Nvim\frequire\0", "config", "Arduino-Nvim")
-time([[Config for Arduino-Nvim]], false)
 -- Config for: toggleterm.nvim
 time([[Config for toggleterm.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15toggleterm\frequire\0", "config", "toggleterm.nvim")
@@ -221,14 +219,26 @@ time([[Config for toggleterm.nvim]], false)
 time([[Config for yazi.nvim]], true)
 try_loadstring("\27LJ\2\nO\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\25open_for_directories\2\nsetup\tyazi\frequire\0", "config", "yazi.nvim")
 time([[Config for yazi.nvim]], false)
--- Config for: mason-lspconfig.nvim
-time([[Config for mason-lspconfig.nvim]], true)
-try_loadstring("\27LJ\2\nî\1\0\0\b\0\b\0/6\0\0\0009\0\1\0009\0\2\0B\0\1\0026\1\0\0009\1\1\0019\1\3\1\18\3\0\0'\4\4\0&\3\4\3)\4\0\0)\5\1\0B\1\4\2\21\2\1\0)\3\0\0\1\3\2\0X\2\1€L\0\2\0\18\2\0\0\6\2\5\0X\3\24€U\3\23€6\3\0\0009\3\1\0039\3\6\3\18\5\2\0'\6\a\0B\3\3\2\18\2\3\0006\3\0\0009\3\1\0039\3\3\3\18\5\2\0'\6\4\0&\5\6\5)\6\0\0)\a\1\0B\3\4\2\18\1\3\0\21\3\1\0)\4\0\0\1\4\3\0X\3è\127L\2\2\0X\3æ\127+\3\0\0L\3\2\0\a:h\16fnamemodify\6/\v/*.ino\tglob\vgetcwd\afn\bvimÖ\4\1\0\t\0\23\0013'\0\0\0005\1\1\0006\2\2\0009\2\3\0029\2\4\2\18\4\0\0B\2\2\2\t\2\0\0X\2\r€6\2\5\0\18\4\0\0B\2\2\2\15\0\2\0X\3\b€6\3\6\0\18\5\2\0B\3\2\3\15\0\3\0X\5\3€\15\0\4\0X\5\1€\18\1\4\0006\2\a\0'\4\b\0B\2\2\0029\2\t\0029\2\n\0025\4\17\0005\5\v\0006\6\2\0009\6\3\0069\6\f\6'\b\r\0B\6\2\2>\6\5\0056\6\2\0009\6\3\0069\6\14\6'\b\15\0B\6\2\2\14\0\6\0X\a\1€'\6\16\0>\6\a\5=\5\18\0045\5\19\0=\5\20\0043\5\21\0=\5\22\4B\2\2\1K\0\1\0\rroot_dir\0\14filetypes\1\4\0\0\farduino\bcpp\6c\bcmd\1\0\3\rroot_dir\0\14filetypes\0\bcmd\0\20/usr/bin/clangd\vclangd\fexepath&$HOME/.arduino15/arduino-cli.yaml\vexpand\1\n\0\0\28arduino-language-server\t-cli\16arduino-cli\16-cli-config\0\f-clangd\0\n-fqbn\24esp32:esp32:esp32s3\nsetup\28arduino_language_server\14lspconfig\frequire\npcall\rloadfile\17filereadable\afn\bvim\1\0\2\nboard\24esp32:esp32:esp32s3\tport\17/dev/ttyACM0\24.arduino_config.lua\2ý\1\1\0\5\0\v\0\0186\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\3\0B\0\2\0029\0\2\0005\2\5\0005\3\4\0=\3\6\0025\3\b\0003\4\a\0=\4\t\3=\3\n\2B\0\2\1K\0\1\0\rhandlers\28arduino_language_server\1\0\1\28arduino_language_server\0\0\21ensure_installed\1\0\2\rhandlers\0\21ensure_installed\0\1\2\0\0\28arduino_language_server\20mason-lspconfig\nsetup\nmason\frequire\0", "config", "mason-lspconfig.nvim")
-time([[Config for mason-lspconfig.nvim]], false)
+-- Config for: esp32.nvim
+time([[Config for esp32.nvim]], true)
+try_loadstring("\27LJ\2\nJ\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\14build_dir\nbuild\nsetup\nesp32\frequire\0", "config", "esp32.nvim")
+time([[Config for esp32.nvim]], false)
+-- Config for: vague
+time([[Config for vague]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\22colorscheme vague\bcmd\bvim\0", "config", "vague")
+time([[Config for vague]], false)
 -- Config for: wf.nvim
 time([[Config for wf.nvim]], true)
 try_loadstring("\27LJ\2\n0\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\awf\frequire\0", "config", "wf.nvim")
 time([[Config for wf.nvim]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+try_loadstring("\27LJ\2\n}\0\0\6\0\b\0\0166\0\0\0'\2\1\0B\0\2\0026\1\2\0009\1\3\0019\1\4\1'\3\5\0B\1\2\0016\1\2\0009\1\3\0019\1\6\1'\3\5\0009\4\a\0B\4\1\0A\1\1\1K\0\1\0\15lsp_config\vconfig\vclangd\venable\blsp\bvim\nesp32\frequire\0", "config", "nvim-lspconfig")
+time([[Config for nvim-lspconfig]], false)
+-- Config for: mason-lspconfig.nvim
+time([[Config for mason-lspconfig.nvim]], true)
+try_loadstring("\27LJ\2\n[\0\0\3\0\4\0\f6\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\3\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\20mason-lspconfig\nsetup\nmason\frequire\0", "config", "mason-lspconfig.nvim")
+time([[Config for mason-lspconfig.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
